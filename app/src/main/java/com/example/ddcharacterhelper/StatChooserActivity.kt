@@ -5,15 +5,15 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class ResultsActivity : AppCompatActivity() {
+class StatChooserActivity :  AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.results_activity)
+        setContentView(R.layout.stat_chooser_activity)
 
 
-        val confirmButton = findViewById<Button>(R.id.button)
+        val confirmButton = findViewById<Button>(R.id.continue_button)
         confirmButton.setOnClickListener {
-            val intent = Intent(this@ResultsActivity, MainActivity::class.java)
+            val intent = Intent(this@StatChooserActivity, ChooseRaceActivity::class.java)
             startActivity(intent)
         }
     }
