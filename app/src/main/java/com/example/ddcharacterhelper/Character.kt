@@ -1,6 +1,6 @@
 package com.example.ddcharacterhelper
 
-class Character {
+object Character {
     var name = ""
     var dEdClass = ""
     var race = ""

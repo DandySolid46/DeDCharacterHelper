@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="Choose_class_activity"/>
+        <activity android:name=".ChooseClassActivity"/>
         <activity android:name=".StatChooserActivity"/>
         <activity android:name=".ChooseRaceActivity"/>
         <activity android:name=".ResultsActivity"/>

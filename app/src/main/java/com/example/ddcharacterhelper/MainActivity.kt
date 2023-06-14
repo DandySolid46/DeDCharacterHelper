@@ -10,9 +10,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
+        if(savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, InfoButtonFragment.newInstance(""))
+                .commit()
+        }
         val startButton = findViewById<Button>(R.id.star_button)
         startButton.setOnClickListener {
-            val intent = Intent(this@MainActivity, Choose_class_activity::class.java)
+            val intent = Intent(this@MainActivity, ChooseClassActivity::class.java)
             startActivity(intent)
         }
     }

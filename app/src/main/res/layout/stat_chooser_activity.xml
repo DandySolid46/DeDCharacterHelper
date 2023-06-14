@@ -5,6 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:id="@+id/constitution_value"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/strength_value"
+        app:layout_constraintEnd_toEndOf="@+id/wisdom_value"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/continue_button"
+        app:layout_constraintTop_toBottomOf="@+id/wisdom_value" />
+
+    <EditText
+        android:id="@+id/charism_value"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/wisdom_value"
+        app:layout_constraintEnd_toEndOf="@+id/wisdom_value"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/continue_button"
+        app:layout_constraintTop_toBottomOf="@+id/inteligence_value" />
+
+    <EditText
+        android:id="@+id/inteligence_value"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/wisdom_value"
+        app:layout_constraintEnd_toEndOf="@+id/wisdom_value"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/continue_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inteligence_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inteligence:"
+        app:layout_constraintBottom_toBottomOf="@+id/inteligence_value"
+        app:layout_constraintEnd_toStartOf="@+id/inteligence_value"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inteligence_value" />
+
     <Button
         android:id="@+id/continue_button"
         android:layout_width="wrap_content"
@@ -13,5 +60,95 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <EditText
+        android:id="@+id/wisdom_value"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/continue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toEndOf="@+id/continue_button"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dexterity_value"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/inteligence_value"
+        app:layout_constraintEnd_toEndOf="@+id/inteligence_value"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/continue_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/strength_value"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/continue_button"
+        app:layout_constraintEnd_toEndOf="@+id/constitution_value"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/continue_button"
+        app:layout_constraintTop_toBottomOf="@+id/wisdom_value"
+        app:layout_constraintVertical_bias="0.675" />
+
+    <TextView
+        android:id="@+id/wisdom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wisdom:"
+        app:layout_constraintBottom_toBottomOf="@+id/wisdom_value"
+        app:layout_constraintEnd_toStartOf="@+id/wisdom_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/wisdom_value" />
+
+    <TextView
+        android:id="@+id/strength_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strength:"
+        app:layout_constraintBottom_toBottomOf="@+id/strength_value"
+        app:layout_constraintEnd_toStartOf="@+id/strength_value"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/strength_value" />
+
+    <TextView
+        android:id="@+id/constitution_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Constitution:"
+        app:layout_constraintBottom_toBottomOf="@+id/constitution_value"
+        app:layout_constraintEnd_toStartOf="@+id/constitution_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constitution_value" />
+
+    <TextView
+        android:id="@+id/dexterity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dexterity:"
+        app:layout_constraintBottom_toBottomOf="@+id/dexterity_value"
+        app:layout_constraintEnd_toStartOf="@+id/dexterity_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dexterity_value" />
+
+    <TextView
+        android:id="@+id/charism_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charism:"
+        app:layout_constraintBottom_toBottomOf="@+id/charism_value"
+        app:layout_constraintEnd_toStartOf="@+id/charism_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/charism_value" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
