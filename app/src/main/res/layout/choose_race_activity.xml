@@ -9,7 +9,7 @@
         android:id="@+id/spinner_class"
         android:layout_width="324dp"
         android:layout_height="85dp"
-        android:entries="@array/classes_array"
+        android:entries="@array/races_array"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/confirm_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,13 +19,15 @@
 
     <Button
         android:id="@+id/confirm_button"
-        android:layout_width="162dp"
-        android:layout_height="71dp"
-        android:text="Confirm"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintVertical_bias="0.81"
+        android:layout_width="162dp"
+        android:layout_height="71dp"
+        android:text="Confirm"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="225dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
