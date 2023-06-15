@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/class_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the class:"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_race"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container_class"
         android:name="com.example.ddcharacterhelper.InfoButtonFragment"
@@ -16,7 +26,7 @@
         app:layout_constraintTop_toBottomOf="@+id/confirm_button" />
 
     <Spinner
-        android:id="@+id/spinner_class"
+        android:id="@+id/spinner_race"
         android:layout_width="324dp"
         android:layout_height="85dp"
         android:entries="@array/classes_array"

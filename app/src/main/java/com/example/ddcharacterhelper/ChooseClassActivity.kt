@@ -18,7 +18,7 @@ class ChooseClassActivity : AppCompatActivity() {
         }
 
         val startButton = findViewById<Button>(R.id.confirm_button)
-        val classesBox = findViewById<Spinner>(R.id.spinner_class)
+        val classesBox = findViewById<Spinner>(R.id.spinner_race)
         startButton.setOnClickListener {
             val intent = Intent(this@ChooseClassActivity, StatChooserActivity::class.java)
 

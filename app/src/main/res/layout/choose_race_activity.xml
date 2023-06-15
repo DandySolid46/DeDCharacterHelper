@@ -5,8 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_race"
+        android:name="com.example.ddcharacterhelper.InfoButtonFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/confirm_button"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_button" />
+
     <Spinner
-        android:id="@+id/spinner_class"
+        android:id="@+id/spinner_race"
         android:layout_width="324dp"
         android:layout_height="85dp"
         android:entries="@array/races_array"
@@ -14,20 +24,27 @@
         app:layout_constraintBottom_toTopOf="@+id/confirm_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/confirm_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81"
         android:layout_width="162dp"
         android:layout_height="71dp"
         android:text="Confirm"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/race_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the race:"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_race"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
